@@ -1,0 +1,29 @@
+作业内容
+1、自己手写完成高仿真版本的Spring IOC部分。
+a 分析spring的核心模块，core beans context
+b 写核心接口或类
+ 1 BeanFactory在spring的beans包下，有方法 getBean()
+   创建GPBeanFactory
+ 2 IOC核心类AbstractApplicationContext在context下， 入口方法refresh()
+
+ 3 DefaultListableBeanFactory
+  默认的容器
+
+ 4 XmlWebApplicationContext GPApplicationContext
+  具体
+c 编写ioc
+ioc的步骤： 定位需要加载的类，加载成list<BeanDefinition>，注册，把beanname对应的BeanDefinition的信息存入缓存
+di
+
+
+
+2、回顾各设计模式的特点和区别，以及在手写源码的应用。
+工厂模式 生产类的
+单例模式 确保唯一
+委派模式 比如经理分派任务给员工
+代理模式 比如中介代理找房
+策略模式 比如选择不同的支付
+适配器模式 兼容
+装饰器模式 比如煎饼加蛋，加肠还是煎饼，只是增强或增加方法
+原型模式 克隆，复制，备份，简化操作
+模版模式 抽象方法，父类定制标准
