@@ -21,8 +21,7 @@ public class GPDefaultListableBeanFactory extends GPAbstractApplicationContext {
     protected final Map<String, GPBeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String,GPBeanDefinition>();
 
     public String[] getbeanDefinitionNames() {
-       beanDefinitionMap.values();
+       return (String[]) beanDefinitionMap.keySet().toArray();
 
-        return null;
     }
 }
